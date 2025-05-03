@@ -11,7 +11,7 @@
 	<groupId>com.example.sbfirst</groupId>
 	<artifactId>sbfirst</artifactId>
 	<version>v1</version>
-	<name>sbFirst</name>
+	<name>sbfirst</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
