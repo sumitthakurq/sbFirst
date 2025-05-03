@@ -22,7 +22,7 @@ pipeline {
     stage('Docker Build and Push') {
       steps {
           sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
-          sh 'docker build -t sumit30/sbFirst-v1.'
+          sh 'docker build -t sumit30/sbFirst-v1'
           sh 'docker push sumit30/sbFirst-v1'
       }
     } 
