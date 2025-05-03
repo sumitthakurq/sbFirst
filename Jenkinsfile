@@ -22,23 +22,23 @@ pipeline {
     stage('Docker Build and Push') {
       steps {
           sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
-          sh 'docker build -t sumit30/sbFirst-v1 .'
-          sh 'docker push sumit30/sbFirst-v1'
+          sh 'docker build -t sumit30/sbfirst-v1 .'
+          sh 'docker push sumit30/sbfirst-v1'
       }
     } 
      stage('Deploy') {
             steps {
                 script {
                     // Stop and remove any existing container
-                    sh 'docker stop sbFirst || true'
-                    sh 'docker rm sbFirst || true'
+                    sh 'docker stop sbfirst || true'
+                    sh 'docker rm sbfirst || true'
                     
                     // Run new container
                     sh """
                     docker run -d \
-                    --name sbFirst \
+                    --name sbfirst \
                     -p 8080:8080 \
-                     sbFirst-v1
+                     sbfirst-v1
                     """
                 }
             }
