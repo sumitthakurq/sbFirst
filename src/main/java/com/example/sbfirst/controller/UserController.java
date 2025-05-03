@@ -29,6 +29,13 @@ public ResponseEntity<String> getData(){
     logger.info("Inside getData Logger   :: ");
     return new ResponseEntity<String>(" Sumit Service is working fine",HttpStatus.OK);
 }
+
+    @GetMapping("/getData1")
+    public ResponseEntity<String> getData1(){
+        System.out.println("Inside getData ::: ");
+        logger.info("Inside getData1 Logger   :: ");
+        return new ResponseEntity<String>(" Inside getData1 Logger",HttpStatus.OK);
+    }
 @PostMapping("/saveUser")
     public ResponseEntity<String> saveUser(@RequestBody UserDTO userDto){
         logger.info("Inside Info Logger   :: "+userDto.getId());
