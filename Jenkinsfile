@@ -38,7 +38,7 @@ pipeline {
                     docker run -d \
                     --name sbfirst \
                     -p 8080:8080 \
-                     sbfirst-v1
+                     sumit30/sbfirst-v1
                     """
                 }
             }
