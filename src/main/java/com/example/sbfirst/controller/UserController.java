@@ -34,7 +34,7 @@ public ResponseEntity<String> getData(){
     public ResponseEntity<String> getData1(){
         System.out.println("Inside getData ::: ");
         logger.info("Inside getData1 Logger   :: ");
-        return new ResponseEntity<String>(" Inside getData1 Logger",HttpStatus.OK);
+        return new ResponseEntity<String>(" Inside getData1 Logger New",HttpStatus.OK);
     }
 @PostMapping("/saveUser")
     public ResponseEntity<String> saveUser(@RequestBody UserDTO userDto){
