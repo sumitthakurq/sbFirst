@@ -43,7 +43,7 @@ pipeline {
                 }
             }
         }
-    }
+    
 
      stage('Cleanup Workspace') {
       steps {
@@ -52,6 +52,5 @@ pipeline {
       }
     }
   }
-
-
+}
 
