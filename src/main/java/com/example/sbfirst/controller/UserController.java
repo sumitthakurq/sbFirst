@@ -27,7 +27,7 @@ List<UserDTO> users = new ArrayList<>();
 public ResponseEntity<String> getData(){
     System.out.println("Inside getData ::: ");
     logger.info("Inside getData Logger   :: ");
-    return new ResponseEntity<String>("Service is working fine",HttpStatus.OK);
+    return new ResponseEntity<String>(" Sumit Service is working fine",HttpStatus.OK);
 }
 @PostMapping("/saveUser")
     public ResponseEntity<String> saveUser(@RequestBody UserDTO userDto){
